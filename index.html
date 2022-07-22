@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <script src="./assets/js/moment.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main_section">
+            <div class="search_bar">
+                <i class="search_icon ti-search"></i>
+                <input type="text" placeholder="Enter city name here!" class="search_input">
+            </div>
+            <div class="wrapper">
+                <h3 class="city_name">--</h3>
+                <p class="weather_state">--</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Image" class="weather_img">
+                <h1 class="temperature">--</h1>
+            </div>
+        </div>
+        <div class="sub_section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">mặt trời mọc</div>
+                    <div class="value sunrise">--</div>
+                </div>
+                <div class="item">
+                    <div class="label">mặt trời lặn</div>
+                    <div class="value sunset">--</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">độ ẩm</div>
+                    <div class="value"><span class="humidity">--</span>%</div>
+                </div>
+                <div class="item">
+                    <div class="label">gió</div>
+                    <div class="value"><span class="wind_speed">--</span> km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
