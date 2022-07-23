@@ -12,8 +12,8 @@ const windSpeed = document.querySelector('.wind_speed');
 
 searchInput.onchange = e => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=${APP_ID}&units=metric&lang=vi`)
-        .then(async res => {
-            const data = await res.json();
+        .then(async res => await res.json())
+        .then(data => {
             cityName.innerText = data.name || DEFAULT_VALUE;
             weatherState.innerText = data.weather[0].description || DEFAULT_VALUE;
             weatherImage.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
